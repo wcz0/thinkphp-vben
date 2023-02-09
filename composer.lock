@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9cc89ad9f3f72304da18e51ed0fb820",
+    "content-hash": "4ccda88d7ec2bdc14b7a39727440233c",
     "packages": [
         {
             "name": "casbin/casbin",
@@ -701,6 +701,64 @@
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
+            "name": "qeq66/jwt",
+            "version": "3.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qeq66/jwt.git",
+                "reference": "bd2fa6c51704dc18c61026c852c789224d7190a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qeq66/jwt/zipball/bd2fa6c51704dc18c61026c852c789224d7190a0",
+                "reference": "bd2fa6c51704dc18c61026c852c789224d7190a0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.5",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/php-invoker": "~1.1",
+                "phpunit/phpunit": "^5.7 || ^7.3",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Otávio Cobucci Oblonczyk",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "support": {
+                "source": "https://github.com/qeq66/jwt/tree/3.3.5"
+            },
+            "time": "2022-07-11T08:31:22+00:00"
+        },
+        {
             "name": "s1lentium/iptools",
             "version": "v1.2.0",
             "source": {
@@ -1377,6 +1435,61 @@
                 }
             ],
             "time": "2023-01-13T08:34:10+00:00"
+        },
+        {
+            "name": "thans/tp-jwt-auth",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/QThans/jwt-auth.git",
+                "reference": "ab5efcc0fd920df81fea2c404c34bb967ef13aba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/QThans/jwt-auth/zipball/ab5efcc0fd920df81fea2c404c34bb967ef13aba",
+                "reference": "ab5efcc0fd920df81fea2c404c34bb967ef13aba",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "qeq66/jwt": "3.3.*",
+                "topthink/framework": "^5.1.10 || ^6.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "think": {
+                    "services": [
+                        "thans\\jwt\\Service"
+                    ],
+                    "config": {
+                        "jwt": "config/config.php"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ],
+                "psr-4": {
+                    "thans\\jwt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thans",
+                    "email": "360641274@qq.com"
+                }
+            ],
+            "description": "thinkphp  jwt auth composer",
+            "support": {
+                "issues": "https://github.com/QThans/jwt-auth/issues",
+                "source": "https://github.com/QThans/jwt-auth/tree/v1.3.1"
+            },
+            "time": "2022-11-01T02:44:23+00:00"
         },
         {
             "name": "topthink/framework",

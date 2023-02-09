@@ -15,3 +15,18 @@ Route::get('think', function () {
 });
 
 Route::get('hello/:name', 'index/hello');
+
+
+
+Route::group('admin', function (){
+
+    Route::post('login', 'AdminController/login');
+    Route::post('register', 'AdminController/register');
+    Route::group(function (){
+        Route::post('logout', 'AdminController/logout');
+        Route::post('refresh', 'AdminController/refresh');
+        Route::get('get-user-info', 'AdminController/getUserInfo');
+        Route::get('get-menu', 'AdminController/getMenu');
+
+    });
+});
